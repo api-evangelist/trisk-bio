@@ -1,8 +1,24 @@
 aid: trisk-bio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/trisk-bio.png
 name: Trisk Bio
-description: 'Trisk Bio is a company surfaced as a portfolio company of matrix-partners and added to the
-  API Evangelist network as a stub for enrichment. Sector: healthtech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Trisk Bio is a preclinical AAV (adeno-associated virus) manufacturing partner / CDMO that
+  develops bespoke, scalable processes for AAV gene therapies to enable affordable preclinical manufacturing.
+  It supplies research-grade and non-human primate (NHP) study-grade vectors across capsid serotypes and
+  transgenes, offering custom process development, high-throughput optimisation of a single transgene
+  against multiple capsids, and purification and supply of partials as reference material. Backed by Matrix
+  Partners, Trisk Bio is a healthtech / biomanufacturing company; at the time of this enrichment pass it
+  publishes a marketing website but no public API, developer portal, or documentation surface.'
 url: https://raw.githubusercontent.com/api-evangelist/trisk-bio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Healthtech
+- Biotechnology
+- Gene Therapy
+- AAV Manufacturing
+- Biomanufacturing
+- CDMO
+- Preclinical
+- Life Sciences
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/trisk-bio-domain-security.yml
 - type: Website
-  url: https://triskbio.com
+  url: https://www.triskbio.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
